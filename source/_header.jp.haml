@@ -1,0 +1,14 @@
+#logo-bar
+  %a.lang-switcher.hide-for-small-only{ href: "/en/#{ current_page.path }" } View page in English
+  %a{ href: '/'}
+    = image_tag 'logo-simple.png', width: 100
+#header
+  .container
+    %ul.nav
+      %li{ main_nav_active('home') }= link_to 'Home', '/index.html'
+      %li{ main_nav_active('about') }= link_to 'About', '/about/index.html'
+      %li{ main_nav_active('what') }= link_to 'What we do', '/what/index.html'
+      %li{ main_nav_active('get-involved') }= link_to 'Get involved', '/get-involved/index.html'
+      %li{ main_nav_active('news') }= link_to 'News', '/news/index.html'
+      %li{ main_nav_active('contact') }= link_to 'Contact', '/contact.html'
+    = yield_content :header_content

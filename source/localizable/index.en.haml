@@ -1,0 +1,50 @@
+---
+title: Ikaw Ako
+layout: home
+---
+
+#hero
+  .logo
+    = link_to '/' do
+      = image_tag 'logo.png', width: '164', title: 'Ikaw Ako'
+  .footer-vignette
+    %h2 Ikaw Ako is a Japanese NGO working with local communities in Negros and Bohol for environmental protection and the creation of sustainable livelihood projects.
+    %p
+      %a{ href: '/'} 日本語で表示するサイト
+    .down
+      %i.icon-chevron-down
+
+#content
+  .projects
+    .projects-list
+      .row
+        .large-4.columns
+          %a{ href: '#' }
+            %h3 Tree-planting
+            %p We have planted over 2,000,000 seedlings across Negros so far
+        .large-4.columns
+          %a{ href: '#' }
+            %h3 Environmental education
+            %p Ikaw Ako has close ties with local schools
+        .large-4.columns
+          %a{ href: '#' }
+            %h3 Livelihood projects
+            %p Pig, poultry, organic agriculture and oyster farming
+      .row
+        .large-4.columns
+          %a{ href: '#' }
+            %h3 Midori Cafe
+            %p A cafe and showroom offering local produce and products
+        .large-4.columns
+          %a{ href: '#' }
+            %h3 Study tours
+            %p Regular study tours bring enthusiastic Japanese students
+        .large-4.columns
+          %a{ href: '#' }
+            %h3 Ecotourism
+            %p The Mangrove ecopark and boardwalk is one of Silay City's
+
+  .container
+    %p.buttons
+      = link_to 'About the Organisation', 'about/index.html', class: 'btn'
+      = link_to 'Get Involved', 'get-involved/index.html', class: 'btn'

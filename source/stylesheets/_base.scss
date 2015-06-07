@@ -1,0 +1,254 @@
+html, body {
+  height: 100%;
+}
+body {
+  background: $offwhite;
+  color: rgba(#000, .7);
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: auto;
+  font: normal 16px/1.5 'Open Sans';
+  @include respond-to(small) {
+    font-size: 14px;
+  }
+}
+a {
+  text-decoration: none;
+  color: $blue;
+  transition: .2s;
+}
+small {
+  color: rgba(#000, .5);
+}
+h1,h2,h3,h4 {
+  font: normal 32px/1.3 Museo;
+}
+h1 {
+  @include respond-to(small) {
+    font-size: 24px;
+  }
+}
+h2 {
+  font-size: 22px;
+  @include respond-to(small) {
+    font-size: 20px;
+  }
+}
+h3 {
+  font-size: 18px;
+  @include respond-to(small) {
+    font-size: 16px;
+  }
+}
+h4 {
+  font-size: 16px;
+  @include respond-to(small) {
+    font-size: 14px;
+  }
+}
+h1,h2,h3,h4,h5,p,ul {
+  margin: 1em 0;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+table {
+  width: 100%;
+  text-align: left;
+  th {
+    vertical-align: top;
+    font-weight: normal;
+    padding: 3px 0;
+    white-space: nowrap;
+  }
+  td {
+    vertical-align: top;
+    line-height: 1.25;
+    padding: 3px 0;
+  }
+}
+dt {
+  font-weight: 700;
+}
+dd {
+  margin: 0 0 1em;
+}
+
+.lead {
+  font-weight: 300;
+  font-size: 20px;
+  padding-bottom: 1em;
+  color: #000;
+  border-bottom: 3px solid rgba(#000, .05);
+  @include respond-to(small) {
+    font-size: 16px;
+  }
+}
+.container {
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+  @include respond-to(small) {
+    padding: 0 10px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  background: $blue;
+  border: 2px solid transparent;
+  color: #fff;
+  text-align: center;
+  padding: .8em 2em;
+  line-height: 1em;
+  font-weight: bold;
+  box-shadow: 0 1px 2px rgba(#000, .1);
+}
+.btn-ghost {
+  color: $logo_blue;
+  border-color: $logo_blue;
+  background: transparent;
+}
+.buttons {
+  text-align: center;
+}
+
+#logo-bar {
+  background: #fff;
+  text-align: center;
+  padding: 8px 0;
+}
+.lang-switcher {
+  position: absolute;
+  right: 15px;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(#000, .4);
+}
+#header {
+  background: $blue;
+  color: #fff;
+  text-shadow: 0 1px rgba(#000, .1);
+  padding: 20px 0 40px;
+  text-align: center;
+  a {
+    color: #fff;
+  }
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    @include respond-to(small) {
+      font-size: 16px;
+    }
+  }
+  .nav {
+    @include reset-list;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    li {
+      display: inline-block;
+      margin: 0 10px 10px;
+      &.active a {
+        color: #fff;
+      }
+    }
+    a {
+      display: inline-block;
+      color: rgba(#fff, .8);
+      &:hover {
+        color: rgba(#fff, 1);
+      }
+    }
+  }
+}
+.header {
+  background: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(#000, .1);
+}
+#aside {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  @include respond-to(small) {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .nav {
+    @include reset-list;
+    margin-right: 20px;
+    font-size: 14px;
+    @include respond-to(small) {
+      margin-right: 0;
+    }
+    li {
+      display: block;
+      margin: 0;
+      &.active {
+        font-weight: bold;
+        a { color: inherit }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    a {
+      display: block;
+      padding: 7px 0;
+    }
+  }
+}
+#content {
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  @include respond-to(small) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+#footer {
+  background: $green;
+  color: rgba(#fff, .8);
+  text-align: center;
+  overflow: hidden;
+  padding: 40px 0;
+  .nav {
+    @include reset-list;
+    margin-bottom: 40px;
+    li {
+      display: inline-block;
+      margin: 0 10px 10px;
+    }
+    a {
+      display: inline-block;
+      color: rgba(#000, .5);
+      &:hover {
+        color: rgba(#000, .7);
+      }
+    }
+  }
+  .seedlings {
+    text-align: center;
+    .leaf {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      line-height: 55px;
+      border: 3px solid rgba(#fff, .3);
+      font-size: 30px;
+      color: rgba(#fff, .9);
+      text-shadow: 0 1px 2px rgba(#000, .1);
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .count {
+      font: 300 24px/1 Museo;
+      padding: 10   px 0 5px
+    }
+  }
+}

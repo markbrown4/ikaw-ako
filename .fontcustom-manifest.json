@@ -1,0 +1,60 @@
+{
+  "checksum": {
+    "previous": "610f1b245ba5bada3463c4db4284f83748666f8a08ae8f8c8236dc0751cfe2f6",
+    "current": "610f1b245ba5bada3463c4db4284f83748666f8a08ae8f8c8236dc0751cfe2f6"
+  },
+  "fonts": [
+    "source/stylesheets/icons_610f1b245ba5bada3463c4db4284f837.ttf",
+    "source/stylesheets/icons_610f1b245ba5bada3463c4db4284f837.svg",
+    "source/stylesheets/icons_610f1b245ba5bada3463c4db4284f837.woff",
+    "source/stylesheets/icons_610f1b245ba5bada3463c4db4284f837.eot"
+  ],
+  "glyphs": {
+    "chevron-down": {
+      "codepoint": 61700,
+      "source": "source/icons/chevron-down.svg"
+    },
+    "chevron-left": {
+      "codepoint": 61701,
+      "source": "source/icons/chevron-left.svg"
+    },
+    "chevron-right": {
+      "codepoint": 61702,
+      "source": "source/icons/chevron-right.svg"
+    },
+    "chevron-up": {
+      "codepoint": 61703,
+      "source": "source/icons/chevron-up.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "icons",
+    "force": false,
+    "input": {
+      "templates": "source/icons",
+      "vectors": "source/icons"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "source/stylesheets",
+      "fonts": "source/stylesheets",
+      "preview": "source/stylesheets"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "templates": [
+      "scss"
+    ]
+  },
+  "templates": [
+    "source/stylesheets/_icons.scss"
+  ]
+}

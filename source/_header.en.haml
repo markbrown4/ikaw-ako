@@ -1,0 +1,8 @@
+#logo-bar
+  %a.lang-switcher{ href: "/#{ current_page.path.gsub /^en\//, '' }" } 日本語で表示するサイト
+  %a{ href: '/en/index.html'}
+    = image_tag 'logo-simple.png', width: 100
+#header
+  .container
+    = partial 'main_nav'
+    = yield_content :header_content

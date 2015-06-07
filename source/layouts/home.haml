@@ -1,0 +1,16 @@
+<!doctype html>
+%html
+  %head
+    %meta{ charset: "utf-8" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
+    %title= current_page.data.title || "Ikaw Ako"
+    = stylesheet_link_tag "application"
+    %link{ rel: "shortcut icon", href: "favicon.png" }
+    %link{ rel: "icon", type: "image/ico", href: "favicon.ico" }
+    %link{ href: "http://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet" }
+    %link{ rel: "stylesheet", href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" }
+    = javascript_include_tag "modernizr"
+  %body{ class: page_classes }
+    = yield
+    = partial 'footer'
+    = javascript_include_tag  "application"

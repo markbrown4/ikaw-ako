@@ -1,0 +1,78 @@
+
+$logo_blue: #076AAC;
+$logo_red: #BC1808;
+$logo_green: #7cbc23;
+
+$offwhite: #F8FAFB;
+$blue: #0199c6;
+$light_blue: #78A5B7;
+$red: #ff5363;
+$brown: #DCD1AC;
+$light_brown: #E8E0BC;
+$green: #86b121;
+
+@keyframes rotate {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@mixin respond-to($media) {
+  @if $media == small {
+    @media only screen and (max-width: 480px) { @content }
+  }
+  @else if $media == medium {
+    @media only screen and (min-width: 481px) { @content }
+  }
+  @else if $media == large {
+    @media only screen and (min-width: 980px) { @content }
+  }
+}
+
+.pull-left { float: left }
+.pull-right { float: right }
+
+.text-left { text-align: left }
+.text-center { text-align: center }
+.text-right { text-align: right }
+
+.rotate-90 { transform: rotate(90deg) }
+.rotate-180 { transform: rotate(180deg) }
+.rotate-270 { transform: rotate(270deg) }
+.rotate-360 { transform: rotate(360deg) }
+
+.pad-left {
+  padding-left: 60px;
+  @include respond-to(small) {
+    padding-left: 0;
+  }
+}
+.pad-right {
+  padding-right: 60px;
+  @include respond-to(small) {
+    padding-right: 0;
+  }
+}
+
+.trimmable {
+  @include respond-to(small) { display: none !important }
+}
+
+.media {
+  overflow: hidden;
+  .img {
+    float: left;
+  }
+  .body {
+    overflow: hidden;
+  }
+}
