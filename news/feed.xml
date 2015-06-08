@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ikaw Ako - News</title>
+  <subtitle>News &amp; Event</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/news/feed.xml" rel="self"/>
+  <updated>2015-05-21T10:00:00+10:00</updated>
+  <author>
+    <name>Ikaw Ako</name>
+  </author>
+  <entry>
+    <title>事務所を移転しました！</title>
+    <link rel="alternate" href="http://blog.url.com/news/2015-weve-moved-office.html"/>
+    <id>http://blog.url.com/news/2015-weve-moved-office.html</id>
+    <published>2015-05-21T10:00:00+10:00</published>
+    <updated>2015-06-08T17:15:39+10:00</updated>
+    <author>
+      <name>Ikaw Ako Administrator</name>
+    </author>
+    <content type="html">&lt;p&gt;イカオ・アコの本部の事務所を移転しました。（2015年2月）&lt;/p&gt;
+
+&lt;p&gt;新しい住所は、477-0031愛知県東海市大田町川南新田２２９　日本福祉大学内です。&lt;/p&gt;
+
+&lt;p&gt;よろしくお願いします。&lt;/p&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ikaw Ako - News</title>
+  <subtitle>News &amp; Event</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/en/news/feed.xml" rel="self"/>
+  <updated>2015-05-21T10:00:00+10:00</updated>
+  <author>
+    <name>Ikaw Ako</name>
+  </author>
+  <entry>
+    <title>We've moved office!</title>
+    <link rel="alternate" href="http://blog.url.com/en/news/2015-weve-moved-office.html"/>
+    <id>http://blog.url.com/en/news/2015-weve-moved-office.html</id>
+    <published>2015-05-21T10:00:00+10:00</published>
+    <updated>2015-06-08T17:15:35+10:00</updated>
+    <author>
+      <name>Ikaw Ako Administrator</name>
+    </author>
+    <content type="html">&lt;p&gt;We've moved the headquarters of the office of Ikao-Ako. (February 2015)&lt;/p&gt;
+
+&lt;p&gt;The new address is 477-0031 Tokai City, Aichi Prefecture Ota-cho, Kawaminami Nitta 229 in the Nihon Fukushi University.&lt;/p&gt;
+
+&lt;p&gt;Thank you very much in advance.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
