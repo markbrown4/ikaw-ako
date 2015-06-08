@@ -5,12 +5,12 @@ layout: home
 
 #hero
   .logo
-    = link_to '/' do
+    = link_to '/index.html' do
       = image_tag 'logo.png', width: '164', title: 'Ikaw Ako'
   .footer-vignette
     %h2 Ikaw-Ako 環境保護と持続可能な生計のプロジェクトを作成するためのネグロスとボホールでの地域社会と協力し、日本のNGOです。
     %p
-      %a{ href: '/en/'} View site in English
+      = link_to 'View site in English', '/en/index.html'
     .down
       %i.fa.fa-chevron-down
 

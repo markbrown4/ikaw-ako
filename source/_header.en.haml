@@ -1,6 +1,7 @@
 #logo-bar
-  %a.lang-switcher{ href: "/#{ current_page.path.gsub /^en\//, '' }" } 日本語で表示するサイト
-  %a{ href: '/en/index.html'}
+  = link_to "/#{ current_page.path.gsub /^en\//, '' }", class: 'lang-switcher hide-for-small-only' do
+    日本語で表示するサイト
+  = link_to '/en/index.html' do
     = image_tag 'logo-simple.png', width: 100
 #header
   .container

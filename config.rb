@@ -2,6 +2,7 @@
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+set :fonts_dir, 'fonts'
 
 sprockets.append_path File.join root, 'source/bower_components'
 
@@ -9,6 +10,7 @@ activate :directory_indexes
 activate :autoprefixer
 activate :livereload
 activate :i18n, :langs => [:jp, :en]
+activate :relative_assets
 
 activate :blog do |blog|
   blog.name = "news"
@@ -35,6 +37,8 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :automatic_image_sizes
+
+  set :relative_links, true
 end
 
 activate :deploy do |deploy|

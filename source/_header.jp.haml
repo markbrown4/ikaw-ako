@@ -1,6 +1,7 @@
 #logo-bar
-  %a.lang-switcher.hide-for-small-only{ href: "/en/#{ current_page.path }" } View page in English
-  %a{ href: '/'}
+  = link_to "/en/#{ current_page.path }", class: 'lang-switcher hide-for-small-only' do
+    View page in English
+  = link_to '/index.html' do
     = image_tag 'logo-simple.png', width: 100
 #header
   .container

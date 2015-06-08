@@ -5,12 +5,12 @@ layout: home
 
 #hero
   .logo
-    = link_to '/' do
+    = link_to '/en/index.html' do
       = image_tag 'logo.png', width: '164', title: 'Ikaw Ako'
   .footer-vignette
     %h2 Ikaw Ako is a Japanese NGO working with local communities in Negros and Bohol for environmental protection and the creation of sustainable livelihood projects.
     %p
-      %a{ href: '/'} 日本語で表示するサイト
+      = link_to '日本語で表示するサイト', '/index.html'
     .down
       %i.fa.fa-chevron-down
 

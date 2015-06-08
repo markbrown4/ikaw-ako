@@ -122,6 +122,7 @@ dd {
 }
 .btn-block {
   display: block;
+  width: 100%;
 }
 .btn-twitter {
   background: #55acee;
@@ -130,6 +131,16 @@ dd {
 .btn-facebook {
   background: #4e69a2;
   color: #fff;
+}
+.btn-paypal {
+  background: #FFC439;
+  border-bottom-color: darken(#FFC439, 15%);
+  color: #012069;
+  text-shadow: 0 1px rgba(#fff, .5);
+  &:hover {
+    background: darken(#FFC439, 5%);
+    color: #012069;
+  }
 }
 .btn-rss {
   background: #FF9900;

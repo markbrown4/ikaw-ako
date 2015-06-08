@@ -6,6 +6,6 @@
     %li= link_to article.title, article
 
 %p
-  %a.btn.btn-small.btn-rss{ href: '/en/news/feed.xml' }
+  = link_to '/en/news/feed.xml', class: 'btn btn-small btn-rss' do
     %i.fa.fa-rss
     RSS Feed
