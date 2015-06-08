@@ -1,0 +1,21 @@
+---
+active_menu: news
+---
+
+- content_for :aside do
+  = partial '/news/menu'
+
+- content_for :header_content do
+  %h1= current_page.data.title
+
+= wrap_layout :layout do
+  = yield
+  #disqus_thread
+  - unless current_page.data.active_menu == 'news'
+    :javascript
+      var disqus_shortname = 'ikawako';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();

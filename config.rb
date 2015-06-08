@@ -10,6 +10,24 @@ activate :autoprefixer
 activate :livereload
 activate :i18n, :langs => [:jp, :en]
 
+activate :blog do |blog|
+  blog.name = "news"
+  blog.sources = "news/{year}-{title}.jp.html"
+  blog.permalink = "news/{year}-{title}.html"
+  blog.paginate = true
+  blog.per_page = 5
+  blog.summary_separator = /READMORE/
+end
+
+activate :blog do |blog|
+  blog.name = 'english_news'
+  blog.sources = "news/{year}-{title}.en.html"
+  blog.permalink = "en/news/{year}-{title}.html"
+  blog.paginate = true
+  blog.per_page = 5
+  blog.summary_separator = /READMORE/
+end
+
 configure :build do
   ignore 'bower_components/*'
   ignore 'icons/*'
@@ -17,44 +35,17 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :automatic_image_sizes
-  # activate :asset_hash
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
 end
 
 activate :deploy do |deploy|
   deploy.method = :git
 end
 
-# compass_config do |config|
-#   config.add_import_path "bower_components/foundation/scss"
-# end
+page "news/*", :layout => :news
+page "news/feed.xml", :layout => false
 
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
-
-###
-# Helpers
-###
+page "en/news/*", :layout => :news
+page "en/news/feed.xml", :layout => false
 
 # Methods defined in the helpers block are available in templates
 helpers do

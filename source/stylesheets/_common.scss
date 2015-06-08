@@ -45,23 +45,8 @@ $green: #86b121;
 .text-center { text-align: center }
 .text-right { text-align: right }
 
-.rotate-90 { transform: rotate(90deg) }
-.rotate-180 { transform: rotate(180deg) }
-.rotate-270 { transform: rotate(270deg) }
-.rotate-360 { transform: rotate(360deg) }
-
-.pad-left {
-  padding-left: 60px;
-  @include respond-to(small) {
-    padding-left: 0;
-  }
-}
-.pad-right {
-  padding-right: 60px;
-  @include respond-to(small) {
-    padding-right: 0;
-  }
-}
+.mb-1 { margin-bottom: 1em !important }
+.mb-2 { margin-bottom: 2em !important }
 
 .trimmable {
   @include respond-to(small) { display: none !important }

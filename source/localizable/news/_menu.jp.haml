@@ -1,0 +1,11 @@
+
+%p
+  %small 最新情報
+%ul.nav
+  - blog.articles[0...5].each do |article|
+    %li= link_to article.title, article
+
+%p
+  %a.btn.btn-small.btn-rss{ href: '/news/feed.xml' }
+    %i.fa.fa-rss
+    RSS Feed

@@ -13,9 +13,6 @@
     font-weight: 300;
   }
   a { color: inherit }
-  .down {
-    font-size: 30px;
-  }
 }
 .footer-vignette {
   position: absolute;
@@ -47,7 +44,8 @@
 .posts {
   @include reset-list;
   li {
-    padding: 40px 0;
+    padding: 0 0 1em;
+    margin: 0 0 1em;
     border-bottom: 1px solid rgba(#000, .05);
     &:last-child {
       border-bottom: none;
@@ -64,6 +62,9 @@
   p {
     clear: both;
   }
+}
+#disqus_thread {
+  margin-top: 40px;
 }
 
 .team {
@@ -182,5 +183,14 @@ hr {
   background: rgba($blue, .1);
 }
 
-.image-wrap {
+.with-icon {
+  margin-left: 30px;
+  .fa {
+    float: left;
+    width: 30px;
+    margin-left: -30px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(#000, .3);
+  }
 }

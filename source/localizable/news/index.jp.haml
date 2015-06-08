@@ -1,0 +1,13 @@
+---
+title: 最新情報
+blog: news
+---
+
+%ul.posts
+  - blog.articles[0...5].each do |article|
+    %li
+      %h2= link_to article.title, article.url
+      %time= article.date.strftime('%Y年 %m月 %d日')
+      %p= article.summary
+      %p
+        = link_to 'この記事を読む', article.url

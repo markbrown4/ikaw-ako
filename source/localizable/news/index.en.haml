@@ -1,0 +1,14 @@
+---
+title: News & Events
+blog: english_news
+active_menu: news
+---
+
+%ul.posts
+  - blog.articles[0...5].each do |article|
+    %li
+      %h2= link_to article.title, article.url
+      %time= article.date.strftime('%b %e %Y')
+      %p= article.summary
+      %p
+        = link_to 'Read more', article.url
