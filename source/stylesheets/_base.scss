@@ -229,9 +229,12 @@ li {
   padding-top: 50px;
   padding-bottom: 40px;
   width: 100%;
+  max-width: 220px;
   @include respond-to(small) {
     padding-top: 10px;
     padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
   }
   &.stuck {
     position: fixed;

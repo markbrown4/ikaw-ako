@@ -47,6 +47,7 @@ $green: #86b121;
 
 .mb-1 { margin-bottom: 1em !important }
 .mb-2 { margin-bottom: 2em !important }
+.mb-30 { margin-bottom: 30px !important }
 
 .trimmable {
   @include respond-to(small) { display: none !important }
