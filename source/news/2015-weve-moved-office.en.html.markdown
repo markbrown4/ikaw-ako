@@ -2,6 +2,7 @@
 title: We've moved office!
 date: 2015-05-21
 blog: english_news
+active_menu: news
 ---
 
 We've moved the headquarters of the office of Ikao-Ako. (February 2015)

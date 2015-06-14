@@ -7,7 +7,7 @@
 = wrap_layout :layout do
   = yield
   #disqus_thread
-  - unless current_page.data.active_menu == 'news'
+  - unless /news\/index.html$/.match current_page.path
     :javascript
       var disqus_shortname = 'ikawako';
       (function() {

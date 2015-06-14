@@ -105,6 +105,142 @@
   }
 }
 
+.timeline {
+  @include reset-list;
+  margin: 2em 30px;
+  position: relative;
+  float: left;
+  @include respond-to(small) {
+    margin: 2em 0;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    margin-left: -1px;
+    background: rgba(#000, .1);
+  }
+  li {
+    position: relative;
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    width: 50%;
+    margin-left: -30px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(#000, .05);
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+    @include respond-to(small) {
+      width: 100%;
+      margin: 0 0 1.5em;
+      padding: 1em;
+    }
+    &:before {
+      // dot
+      content: " ";
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      right: 0;
+      top: 50%;
+      margin-top: -3px;
+      margin-right: -33px;
+      border-radius: 100%;
+      background-color: #666;
+      @include respond-to(small) {
+        display: none;
+      }
+    }
+    &:after {
+      // arrow
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      margin-top: -5px;
+      right: 0;
+      margin-right: -5px;
+      box-shadow: 1px -1px rgba(#000, .03);
+      transform: rotate(45deg);
+      background: #fff;
+      @include respond-to(small) {
+        display: none;
+      }
+    }
+    &:nth-child(even) {
+      clear: right;
+      float: right;
+      margin-right: -30px;
+      margin-left: 0;
+      @include respond-to(small) {
+        float: none;
+        margin: 0 0 1.5em;
+      }
+      &:before {
+        right: auto;
+        left: 0;
+        margin-left: -33px;
+        margin-right: 0;
+      }
+      &:after {
+        right: auto;
+        left: 0;
+        margin-right: 0;
+        margin-left: -5px;
+        box-shadow: -1px 1px rgba(#000, .03);
+      }
+    }
+  }
+  p {
+    margin-top: .5em;
+    font-size: 14px;
+  }
+  time {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgba(#000, .07);
+    font-size: 12px;
+    font-weight: bold;
+    color: $green;
+    text-transform: uppercase;
+    padding-top: 1em;
+    &:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+  @include respond-to(medium) {
+    li.timeline-1996 {
+      margin-top: -50px;
+    }
+    li.timeline-2003 {
+      margin-top: -128px;
+    }
+    li.timeline-2006 {
+      margin-top: 100px;
+    }
+    li.timeline-2007 {
+      margin-top: -70px;
+    }
+    li.timeline-2010 {
+      margin-top: -155px;
+    }
+    li.timeline-2011 {
+      margin-top: 300px;
+    }
+    li.timeline-2012 {
+      margin-top: -66px;
+    }
+    li.timeline-2013 {
+      margin-top: 460px;
+    }
+  }
+}
 
 #contact {
   margin: 40px 0 60px;
