@@ -9,13 +9,14 @@
     %link{ rel: "icon", type: "image/ico", href: "favicon.ico" }
     %link{ href: "http://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet" }
     %link{ rel: "stylesheet", href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" }
-    = javascript_include_tag "modernizr"
   %body{ class: page_classes }
     = partial 'header'
     .row
-      #content.columns.large-9.large-push-3
-        = yield
-      #aside.columns.large-3.large-pull-9
-        = yield_content :aside
+      .columns.medium-9.medium-push-3
+        #content
+          = yield
+      .columns.medium-3.medium-pull-9
+        #aside
+          = yield_content :aside
     = partial 'footer'
     = javascript_include_tag  "application"
